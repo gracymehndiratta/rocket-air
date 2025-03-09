@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <section class="hero">
+        <h1 data-aos="fade-up">Next-Level Digital Experiences</h1>
+        <p>We build innovative, cutting-edge web solutions for modern brands.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="features">
+        <h2 data-aos="fade-up">Latest Insights</h2>
+        <div id="api-data" class="api-container">
+            <p>Loading data...</p>
+        </div>
+    </section>
+
+    <footer class="footer" data-aos="fade-up">
+        <p>&copy; 2025 RocketWeb. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            easing: "ease-in-out",
+            once: true 
+        });
+    </script>
+
+</body>
+</html>
